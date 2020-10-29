@@ -1,1 +1,41 @@
 //This file you will create your style for buttons inside of the project
+.section--btn {
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 1.5rem;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    box-shadow: 0px 5px 5px lightgrey;
+    padding: 15px;
+    border-radius: 30px;
+    font-size: 1rem;
+    background: linear-gradient(
+        173deg,
+        rgba(255, 121, 218, 1) 0%,
+        rgba(214, 108, 219, 1) 39%,
+        rgba(171, 94, 220, 1) 85%,
+        rgba(155, 89, 220, 1) 100%
+    );
+    transition: all 200ms ease-in-out;
+    & a {
+        align-items: center;
+        text-decoration: none;
+        color: white;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    &:hover {
+        background: linear-gradient(
+            173deg,
+            rgb(255, 147, 224) 0%,
+            rgb(219, 125, 224) 39%,
+            rgb(179, 112, 224) 85%,
+            rgba(155, 89, 220, 1) 100%
+        );
+        box-shadow: 0px 10px 5px lightgrey;
+    }
+}

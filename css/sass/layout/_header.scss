@@ -1,1 +1,14 @@
 //This file is for create your style with relation on space of header
+header {
+    h1 {
+        font-size: 2rem;
+        text-align: center;
+        font-family: "Shrikhand", sans-serif;
+        border-bottom: 1px solid white;
+        margin-top: 10px;
+    }
+    h1 a {
+        text-decoration: none;
+        color: black;
+    }
+}
