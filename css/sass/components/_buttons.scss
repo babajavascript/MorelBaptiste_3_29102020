@@ -1,4 +1,4 @@
-//This file you will create your style for buttons inside of the project
+//here we talk about the linear gradient btn
 .section--btn {
     cursor: pointer;
     -webkit-user-select: none;
@@ -20,10 +20,8 @@
         rgba(171, 94, 220, 1) 85%,
         rgba(155, 89, 220, 1) 100%
     );
-    transition: all 200ms ease-in-out;
+    transition: box-shadow 200ms ease-in-out;
     & a {
-        align-items: center;
-        text-decoration: none;
         color: white;
         padding-left: 10px;
         padding-right: 10px;
@@ -34,7 +32,7 @@
             rgb(255, 147, 224) 0%,
             rgb(219, 125, 224) 39%,
             rgb(179, 112, 224) 85%,
-            rgba(155, 89, 220, 1) 100%
+            rgb(172, 114, 229) 100%
         );
         box-shadow: 0px 10px 5px lightgrey;
     }

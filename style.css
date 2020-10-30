@@ -4,6 +4,15 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
 header h1 {
   font-size: 2rem;
   text-align: center;
@@ -30,7 +39,6 @@ header h1 a {
 }
 #section--location .location a {
   color: black;
-  text-decoration: none;
 }
 #section--location .location i {
   margin-right: 16px;
@@ -75,18 +83,26 @@ header h1 a {
   border-radius: 30px;
   font-size: 1rem;
   background: linear-gradient(173deg, #ff79da 0%, #d66cdb 39%, #ab5edc 85%, #9b59dc 100%);
-  transition: all 200ms ease-in-out;
+  transition: box-shadow 200ms ease-in-out;
 }
 .section--btn a {
-  align-items: center;
-  text-decoration: none;
   color: white;
   padding-left: 10px;
   padding-right: 10px;
 }
 .section--btn:hover {
-  background: linear-gradient(173deg, #ff93e0 0%, #db7de0 39%, #b370e0 85%, #9b59dc 100%);
+  background: linear-gradient(173deg, #ff93e0 0%, #db7de0 39%, #b370e0 85%, #ac72e5 100%);
   box-shadow: 0px 10px 5px lightgrey;
+}
+
+#containerSecondSection {
+  margin-left: 3%;
+  margin-right: 3%;
+}
+#containerSecondSection .second--container--tiitle {
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin-top: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */

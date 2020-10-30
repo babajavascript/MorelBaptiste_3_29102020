@@ -1,5 +1,7 @@
 //This file is for create your style with relation on space of header
 header {
+    display: flex;
+    justify-content: center;
     h1 {
         font-size: 2rem;
         text-align: center;
