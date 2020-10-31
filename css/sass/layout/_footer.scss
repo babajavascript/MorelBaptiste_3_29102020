@@ -1,1 +1,25 @@
 //This file is for create your style with relation on space of footer
+footer{
+    background: #363636;
+    color: white;
+    border: border-box;
+    padding: 15px 0px 15px 0px;
+}
+#containerFooter{
+    margin-left: 3%;
+    line-height: 12px;
+    .footer--title{
+        margin-bottom: 30px;
+        font-size: 1.3rem;
+        font-family: "Shrikhand";
+
+    }
+}
+.footer-text{
+    i{
+        margin-right: 10px;
+    }
+}
+.fa-hands-helping{
+    font-size: 0.7rem;
+}

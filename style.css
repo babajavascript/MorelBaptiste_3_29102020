@@ -1,6 +1,6 @@
 body {
+  height: 100vh;
   margin: 0;
-  padding: 0;
   font-family: "Roboto", sans-serif;
 }
 
@@ -166,6 +166,7 @@ header h1 a {
 #containerThirdSection {
   margin-top: 100px;
   background: #f9f9f9;
+  padding-bottom: 100px;
 }
 #containerThirdSection .third--container--tiitle {
   font-size: 1.5rem;
@@ -185,6 +186,7 @@ header h1 a {
 }
 #figure--position .link--menu {
   margin-top: 30px;
+  border-radius: 15px;
 }
 #figure--position .link--menu .figure--menu {
   margin: 0px;
@@ -241,6 +243,31 @@ header h1 a {
 .loca--menu {
   font-weight: 100;
   font-size: 1.2rem;
+}
+
+footer {
+  background: #363636;
+  color: white;
+  border: border-box;
+  padding: 15px 0px 15px 0px;
+}
+
+#containerFooter {
+  margin-left: 3%;
+  line-height: 12px;
+}
+#containerFooter .footer--title {
+  margin-bottom: 30px;
+  font-size: 1.3rem;
+  font-family: "Shrikhand";
+}
+
+.footer-text i {
+  margin-right: 10px;
+}
+
+.fa-hands-helping {
+  font-size: 0.7rem;
 }
 
 /*# sourceMappingURL=style.css.map */
