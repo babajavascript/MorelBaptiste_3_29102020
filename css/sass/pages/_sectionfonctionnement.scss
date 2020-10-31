@@ -18,7 +18,7 @@
     font-size: 17px;
     box-shadow: 0px 3px 10px lightgrey;
 
-    .container--phoneAndText {
+    .container--faAndText {
         display: flex;
         margin: auto;
         margin-left: 20px;
@@ -36,7 +36,7 @@
     i {
         opacity: 0.6;
     }
-    .i--one{
+    .i--one {
         color: $primary-color;
         opacity: 1;
     }
@@ -60,4 +60,3 @@
 .box--three {
     background-color: rgba(147, 86, 220, 0.1);
 }
-
