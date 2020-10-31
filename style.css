@@ -175,6 +175,7 @@ header h1 a {
 #figure--position {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   margin-top: 30px;
   margin-left: 3%;
   margin-right: 3%;
