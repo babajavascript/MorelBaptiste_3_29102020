@@ -4,6 +4,7 @@ footer{
     color: white;
     border: border-box;
     padding: 15px 0px 15px 0px;
+    min-width: 375px;
 }
 #containerFooter{
     margin-left: 6%;
@@ -12,7 +13,6 @@ footer{
         margin-bottom: 30px;
         font-size: 1.3rem;
         font-family: "Shrikhand";
-
     }
 }
 .footer-text{
