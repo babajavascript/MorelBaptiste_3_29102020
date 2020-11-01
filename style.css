@@ -290,21 +290,25 @@ footer {
   width: 375px;
   margin: auto;
   background: #f9f9f9;
+  padding-bottom: 20px;
 }
 .container--menu img {
   width: 375px;
-  position: relative;
+  object-fit: cover;
+  height: 300px;
 }
 
 .menu--title {
-  background: #f9f9f9;
   display: flex;
   justify-content: center;
   border-radius: 30px 30px 0px 0px;
+  margin-top: -50px;
+  position: sticky;
+  background: #f9f9f9;
 }
 .menu--title p {
   margin-top: 30px;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   font-family: "Shrikhand";
   margin-left: 15px;
 }
@@ -328,29 +332,67 @@ footer {
   color: red;
 }
 
-.box--entrees {
+.box--plats {
   background: white;
   margin-left: 15px;
   margin-right: 15px;
   padding-left: 5px;
   padding-right: 5px;
-  margin-top: 10px;
+  margin-top: 18px;
   border-radius: 10px;
   box-shadow: 0px 3px 4px lightgrey;
+  border: 1px solid white;
 }
-.box--entrees .plat--titre {
+.box--plats .plat--titre {
   font-size: 1.1rem;
-  padding-top: 5px;
+  margin-top: 8px;
 }
 
 .soustitre--prix {
   display: flex;
   justify-content: space-between;
-  margin-top: -25px;
+  margin-top: -27px;
+  margin-bottom: -10px;
 }
 .soustitre--prix .plat--soustitre {
   font-weight: 100;
   font-size: 0.9rem;
+  width: 260px;
+}
+
+.plat--prix--long {
+  padding-top: 15px;
+}
+
+.plat--prix {
+  margin-top: 14px;
+}
+
+.section--titleAndBtn--page {
+  display: flex;
+  background: #f9f9f9;
+}
+
+.section--btn--page {
+  cursor: pointer;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 60px;
+  box-shadow: 0px 5px 5px lightgrey;
+  padding: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 30px;
+  font-size: 1rem;
+  background: linear-gradient(173deg, #ff79da 0%, #d66cdb 39%, #ab5edc 85%, #9b59dc 100%);
+  transition: box-shadow 200ms ease-in-out;
+}
+.section--btn--page a {
+  color: white;
+}
+.section--btn--page:hover {
+  opacity: 0.9;
+  box-shadow: 0px 10px 5px lightgrey;
 }
 
 /*# sourceMappingURL=style.css.map */
