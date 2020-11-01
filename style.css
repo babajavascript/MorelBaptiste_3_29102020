@@ -275,4 +275,15 @@ footer {
   font-size: 0.7rem;
 }
 
+.arrow--title i {
+  font-size: 1.7rem;
+  position: absolute;
+  left: 10px;
+  top: 18px;
+}
+
+.container--menu img {
+  width: 375px;
+}
+
 /*# sourceMappingURL=style.css.map */
