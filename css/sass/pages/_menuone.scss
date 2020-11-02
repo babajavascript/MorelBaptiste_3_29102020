@@ -44,13 +44,12 @@
         background: #f9f9f9;
     }
 }
-.fa-heart {
+.far {
     margin: auto;
     font-size: 1.7rem;
-    transition: color 20ms ease-in-out;
     color: black;
     &:hover {
-        color: red;
+        color: yellow;
     }
 }
 
@@ -82,18 +81,17 @@
         width: 260px;
     }
 }
-.plat--prix--long{
+.plat--prix--long {
     padding-top: 15px;
 }
-.plat--prix{
+.plat--prix {
     margin-top: 14px;
 }
 //here we talk about the linear gradient btn
 
-.section--titleAndBtn--page{
+.section--titleAndBtn--page {
     display: flex;
     background: #f9f9f9;
-
 }
 .section--btn--page {
     cursor: pointer;
