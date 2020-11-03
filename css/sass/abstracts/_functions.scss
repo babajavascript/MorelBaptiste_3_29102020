@@ -1,1 +1,9 @@
 //This file you will create your functions inside of the project
+@keyframes rotateit {
+    0% {
+         transform: rotate(360deg);
+    }
+    100% {
+         transform: rotate(0deg);
+    } 
+ }
