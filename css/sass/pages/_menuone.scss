@@ -120,31 +120,39 @@
         box-shadow: 0px 10px 5px lightgrey;
     }
 }
+.position--spinner{
+    margin: auto;
+    position: relative;
+    border: 1px solid orange;
+    display: flex;
+    justify-content: center;
+}
 .spinner {
     width: 100px;
     height: 100px;
     position: absolute;
+    margin: auto;
     margin-top: 200px;
     animation: rotateit 1.5s ease-in-out 2;
     opacity: 0;
-}
-.spinner.circles div {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: linear-gradient(
-        173deg,
-        rgba(255, 121, 218, 1) 0%,
-        rgba(214, 108, 219, 1) 39%,
-        rgba(171, 94, 220, 1) 85%,
-        rgba(155, 89, 220, 1) 100%
-    );
-    position: absolute;
-    margin: auto;
-    top: 45px;
-    left: 35px;
-}
 
+    div {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: linear-gradient(
+            173deg,
+            rgba(255, 121, 218, 1) 0%,
+            rgba(214, 108, 219, 1) 39%,
+            rgba(171, 94, 220, 1) 85%,
+            rgba(155, 89, 220, 1) 100%
+        );
+        position: absolute;
+        margin: auto;
+        top: 45px;
+        left: 35px;
+    }
+}
 .spinner.circles div:nth-child(1) {
     transform: rotate(0deg) translate(0, -35px) scale(1.3);
 }
@@ -175,32 +183,6 @@
 .spinner.circles div:nth-child(8) {
     transform: rotate(315deg) translate(0, -35px) scale(0.1);
     opacity: 0.1;
-}
-@keyframes body {
-    0% {
-        opacity: 0;
-    }
-    10% {
-        opacity: 0;
-    }
-    20% {
-        opacity: 0;
-    }
-    39% {
-        opacity: 0;
-    }
-    69% {
-        opacity: 0;
-    }
-    89%{
-        opacity: 0;
-    }
-    97%{
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
 }
 .transform {
     animation: body 3s;
