@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @keyframes rotateit {
   0% {
     transform: rotate(360deg);
@@ -42,6 +43,365 @@
     opacity: 1;
   }
 }
+@keyframes heart {
+  0% {
+    background: white;
+  }
+  100% {
+    background: #ff79da;
+  }
+}
+@keyframes rotateit {
+  0% {
+    transform: rotate(360deg);
+  }
+  20% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+}
+@keyframes body {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  39% {
+    opacity: 0;
+  }
+  69% {
+    opacity: 0;
+  }
+  89% {
+    opacity: 0;
+  }
+  97% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes heart {
+  0% {
+    background: white;
+  }
+  100% {
+    background: pink;
+  }
+}
+@keyframes box {
+  0% {
+    transform: translateX(60px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes boxReverse {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(60px);
+  }
+}
+@keyframes validate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.position--spinner {
+  margin: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.spinner {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  margin: auto;
+  margin-top: 200px;
+  animation: rotateit 1.5s ease-in-out 2;
+  opacity: 0;
+}
+.spinner div {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: linear-gradient(173deg, #ff79da 0%, #d66cdb 39%, #ab5edc 85%, #9b59dc 100%);
+  position: absolute;
+  margin: auto;
+  top: 45px;
+  left: 35px;
+}
+
+.spinner.circles div:nth-child(1) {
+  transform: rotate(0deg) translate(0, -35px) scale(1.3);
+}
+
+.spinner.circles div:nth-child(2) {
+  transform: rotate(45deg) translate(0, -35px) scale(1.2);
+  opacity: 0.7;
+}
+
+.spinner.circles div:nth-child(3) {
+  transform: rotate(90deg) translate(0, -35px) scale(1.1);
+  opacity: 0.6;
+}
+
+.spinner.circles div:nth-child(4) {
+  transform: rotate(135deg) translate(0, -35px) scale(0.9);
+  opacity: 0.5;
+}
+
+.spinner.circles div:nth-child(5) {
+  transform: rotate(180deg) translate(0, -35px) scale(0.7);
+  opacity: 0.4;
+}
+
+.spinner.circles div:nth-child(6) {
+  transform: rotate(225deg) translate(0, -35px) scale(0.5);
+  opacity: 0.3;
+}
+
+.spinner.circles div:nth-child(7) {
+  transform: rotate(270deg) translate(0, -35px) scale(0.3);
+  opacity: 0.2;
+}
+
+.spinner.circles div:nth-child(8) {
+  transform: rotate(315deg) translate(0, -35px) scale(0.1);
+  opacity: 0.1;
+}
+
+.transform {
+  animation: body 3.5s;
+}
+
+/* heart index */
+.heart--index {
+  background-color: white;
+  height: 12px;
+  position: relative;
+  top: 225px;
+  right: 28px;
+  transform: rotate(-45deg);
+  position: absolute;
+  width: 12px;
+  cursor: pointer;
+}
+
+.heart--index:before,
+.heart--index:after {
+  content: "";
+  background-color: white;
+  border-radius: 50%;
+  height: 12px;
+  position: absolute;
+  width: 12px;
+}
+
+.heart--index:before {
+  top: -8px;
+  left: 0;
+}
+
+.heart--index:after {
+  left: 8px;
+  top: 0;
+}
+
+.heart--index:hover,
+.heart--index:hover::before,
+.heart--index:hover::after {
+  display: inline-block;
+  animation: heart 1.5s ease-in-out 1;
+  animation-fill-mode: forwards;
+}
+
+/* heart menu one */
+.heart {
+  background-color: white;
+  height: 12px;
+  position: relative;
+  top: 48px;
+  right: 26px;
+  transform: rotate(-45deg);
+  position: absolute;
+  width: 12px;
+  cursor: pointer;
+}
+
+.heart:before,
+.heart:after {
+  content: "";
+  background-color: white;
+  border-radius: 50%;
+  height: 12px;
+  position: absolute;
+  width: 12px;
+}
+
+.heart:before {
+  top: -8px;
+  left: 0;
+}
+
+.heart:after {
+  left: 8px;
+  top: 0;
+}
+
+.heart:hover,
+.heart:hover::before,
+.heart:hover::after {
+  display: inline-block;
+  animation: heart 1.5s ease-in-out 1;
+  animation-fill-mode: forwards;
+}
+
+/* heart menu two */
+.heart--two {
+  background-color: white;
+  height: 12px;
+  position: relative;
+  top: 48px;
+  right: 25px;
+  transform: rotate(-45deg);
+  position: absolute;
+  width: 12px;
+  cursor: pointer;
+}
+
+.heart--two:before,
+.heart--two:after {
+  content: "";
+  background-color: white;
+  border-radius: 50%;
+  height: 12px;
+  position: absolute;
+  width: 12px;
+}
+
+.heart--two:before {
+  top: -8px;
+  left: 0;
+}
+
+.heart--two:after {
+  left: 8px;
+  top: 0;
+}
+
+.heart--two:hover,
+.heart--two:hover::before,
+.heart--two:hover::after {
+  display: inline-block;
+  animation: heart 1.5s ease-in-out 1;
+  animation-fill-mode: forwards;
+}
+
+/* heart menu three */
+.heart--three {
+  background-color: white;
+  height: 12px;
+  position: relative;
+  top: 48px;
+  right: 40px;
+  transform: rotate(-45deg);
+  position: absolute;
+  width: 12px;
+  cursor: pointer;
+}
+
+.heart--three:before,
+.heart--three:after {
+  content: "";
+  background-color: white;
+  border-radius: 50%;
+  height: 12px;
+  position: absolute;
+  width: 12px;
+}
+
+.heart--three:before {
+  top: -8px;
+  left: 0;
+}
+
+.heart--three:after {
+  left: 8px;
+  top: 0;
+}
+
+.heart--three:hover,
+.heart--three:hover::before,
+.heart--three:hover::after {
+  display: inline-block;
+  animation: heart 1.5s ease-in-out 1;
+  animation-fill-mode: forwards;
+}
+
+/* heart menu four */
+.heart--four {
+  background-color: white;
+  height: 12px;
+  position: relative;
+  top: 48px;
+  right: 28px;
+  transform: rotate(-45deg);
+  position: absolute;
+  width: 12px;
+  cursor: pointer;
+}
+
+.heart--four:before,
+.heart--four:after {
+  content: "";
+  background-color: white;
+  border-radius: 50%;
+  height: 12px;
+  position: absolute;
+  width: 12px;
+}
+
+.heart--four:before {
+  top: -8px;
+  left: 0;
+}
+
+.heart--four:after {
+  left: 8px;
+  top: 0;
+}
+
+.heart--four:hover,
+.heart--four:hover::before,
+.heart--four:hover::after {
+  display: inline-block;
+  animation: heart 1.5s ease-in-out 1;
+  animation-fill-mode: forwards;
+}
+
 body {
   height: 100vh;
   margin: 0;
@@ -315,17 +675,15 @@ header h1 a {
 
 .menu--title {
   display: flex;
-  justify-content: center;
   border-radius: 30px 30px 0px 0px;
   margin-top: -50px;
   position: sticky;
   background: #f9f9f9;
 }
 .menu--title p {
-  margin-top: 30px;
   font-size: 1.7rem;
   font-family: "Shrikhand";
-  margin-left: 15px;
+  margin: 30px auto;
 }
 
 .container--entrees .entrees {
@@ -337,13 +695,22 @@ header h1 a {
   background: #f9f9f9;
 }
 
-.far {
+#empty-heart {
+  position: relative;
   margin: auto;
   font-size: 1.7rem;
+  width: 20px;
+  height: 25px;
 }
-.far:hover {
-  transition: all 500ms ease-in-out;
-  background: red;
+#empty-heart::before {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 100;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
 }
 
 .box--plats {
@@ -351,11 +718,11 @@ header h1 a {
   margin-left: 15px;
   margin-right: 15px;
   padding-left: 5px;
-  padding-right: 5px;
   margin-top: 18px;
   border-radius: 10px;
   box-shadow: 0px 3px 4px lightgrey;
   border: 1px solid white;
+  cursor: pointer;
 }
 .box--plats .plat--titre {
   font-size: 1.1rem;
@@ -366,12 +733,73 @@ header h1 a {
   display: flex;
   justify-content: space-between;
   margin-top: -27px;
-  margin-bottom: -10px;
+  height: 40px;
+  position: relative;
 }
 .soustitre--prix .plat--soustitre {
   font-weight: 100;
   font-size: 0.9rem;
   width: 260px;
+  height: 20px;
+}
+
+.soustitre--prix--long {
+  height: 54px;
+}
+
+.box--plats:hover .plat--titre--long {
+  width: 260px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.figcaption--encoche {
+  width: 80px;
+  position: relative;
+  border-radius: 0 10px 10px 0px;
+  margin-top: -20px;
+  margin-right: -1px;
+  background: #99e2d0;
+  display: none;
+}
+
+.box--plats:hover {
+  display: block;
+  overflow: hidden;
+}
+.box--plats:hover .figcaption--encoche {
+  display: inline-block;
+  animation: box 600ms ease-in-out;
+}
+.box--plats:hover .figcaption--encoche .validation--logo i {
+  animation: validate 600ms ease-in-out;
+}
+
+.box--plats:hover .plat--soustitre--long {
+  width: 260px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.validation--logo {
+  width: 28px;
+  height: 28px;
+  border: 1px solid white;
+  background: white;
+  margin: auto;
+  margin-top: 17px;
+  border-radius: 100px;
+}
+.validation--logo i {
+  color: #99e2d0;
+  margin-left: 6px;
+  margin-top: 6px;
+}
+
+.validation--logo--long {
+  margin-top: 25px;
 }
 
 .plat--prix--long {
@@ -380,6 +808,7 @@ header h1 a {
 
 .plat--prix {
   margin-top: 14px;
+  margin-right: 2px;
 }
 
 .section--titleAndBtn--page {
@@ -407,77 +836,6 @@ header h1 a {
 .section--btn--page:hover {
   opacity: 0.9;
   box-shadow: 0px 10px 5px lightgrey;
-}
-
-.position--spinner {
-  margin: auto;
-  position: relative;
-  border: 1px solid orange;
-  display: flex;
-  justify-content: center;
-}
-
-.spinner {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  margin: auto;
-  margin-top: 200px;
-  animation: rotateit 1.5s ease-in-out 2;
-  opacity: 0;
-}
-.spinner div {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: linear-gradient(173deg, #ff79da 0%, #d66cdb 39%, #ab5edc 85%, #9b59dc 100%);
-  position: absolute;
-  margin: auto;
-  top: 45px;
-  left: 35px;
-}
-
-.spinner.circles div:nth-child(1) {
-  transform: rotate(0deg) translate(0, -35px) scale(1.3);
-}
-
-.spinner.circles div:nth-child(2) {
-  transform: rotate(45deg) translate(0, -35px) scale(1.2);
-  opacity: 0.7;
-}
-
-.spinner.circles div:nth-child(3) {
-  transform: rotate(90deg) translate(0, -35px) scale(1.1);
-  opacity: 0.6;
-}
-
-.spinner.circles div:nth-child(4) {
-  transform: rotate(135deg) translate(0, -35px) scale(0.9);
-  opacity: 0.5;
-}
-
-.spinner.circles div:nth-child(5) {
-  transform: rotate(180deg) translate(0, -35px) scale(0.7);
-  opacity: 0.4;
-}
-
-.spinner.circles div:nth-child(6) {
-  transform: rotate(225deg) translate(0, -35px) scale(0.5);
-  opacity: 0.3;
-}
-
-.spinner.circles div:nth-child(7) {
-  transform: rotate(270deg) translate(0, -35px) scale(0.3);
-  opacity: 0.2;
-}
-
-.spinner.circles div:nth-child(8) {
-  transform: rotate(315deg) translate(0, -35px) scale(0.1);
-  opacity: 0.1;
-}
-
-.transform {
-  animation: body 3s;
 }
 
 footer {

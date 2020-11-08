@@ -1,0 +1,185 @@
+/* heart index */
+.heart--index {
+    background-color: white;
+    height: 12px;
+    position: relative;
+    top: 225px;
+    right: 28px;
+    transform: rotate(-45deg);
+    position: absolute;
+    width: 12px;
+    cursor: pointer;
+}
+.heart--index:before,
+.heart--index:after {
+    content: "";
+    background-color: white;
+    border-radius: 50%;
+    height: 12px;
+    position: absolute;
+    width: 12px;
+}
+.heart--index:before {
+    top: -8px;
+    left: 0;
+}
+
+.heart--index:after {
+    left: 8px;
+    top: 0;
+}
+.heart--index:hover,
+.heart--index:hover::before,
+.heart--index:hover::after {
+    display: inline-block;
+    animation: heart 1.5s ease-in-out 1;
+    animation-fill-mode: forwards;
+}
+/* heart menu one */
+.heart {
+    background-color: white;
+    height: 12px;
+    position: relative;
+    top: 48px;
+    right: 26px;
+    transform: rotate(-45deg);
+    position: absolute;
+    width: 12px;
+    cursor: pointer;
+}
+.heart:before,
+.heart:after {
+    content: "";
+    background-color: white;
+    border-radius: 50%;
+    height: 12px;
+    position: absolute;
+    width: 12px;
+}
+.heart:before {
+    top: -8px;
+    left: 0;
+}
+
+.heart:after {
+    left: 8px;
+    top: 0;
+}
+.heart:hover,
+.heart:hover::before,
+.heart:hover::after {
+    display: inline-block;
+    animation: heart 1.5s ease-in-out 1;
+    animation-fill-mode: forwards;
+}
+/* heart menu two */
+.heart--two {
+    background-color: white;
+    height: 12px;
+    position: relative;
+    top: 48px;
+    right: 25px;
+    transform: rotate(-45deg);
+    position: absolute;
+    width: 12px;
+    cursor: pointer;
+}
+.heart--two:before,
+.heart--two:after {
+    content: "";
+    background-color: white;
+    border-radius: 50%;
+    height: 12px;
+    position: absolute;
+    width: 12px;
+}
+.heart--two:before {
+    top: -8px;
+    left: 0;
+}
+
+.heart--two:after {
+    left: 8px;
+    top: 0;
+}
+.heart--two:hover,
+.heart--two:hover::before,
+.heart--two:hover::after {
+    display: inline-block;
+    animation: heart 1.5s ease-in-out 1;
+    animation-fill-mode: forwards;
+}
+/* heart menu three */
+.heart--three {
+    background-color: white;
+    height: 12px;
+    position: relative;
+    top: 48px;
+    right: 40px;
+    transform: rotate(-45deg);
+    position: absolute;
+    width: 12px;
+    cursor: pointer;
+}
+.heart--three:before,
+.heart--three:after {
+    content: "";
+    background-color: white;
+    border-radius: 50%;
+    height: 12px;
+    position: absolute;
+    width: 12px;
+}
+.heart--three:before {
+    top: -8px;
+    left: 0;
+}
+
+.heart--three:after {
+    left: 8px;
+    top: 0;
+}
+.heart--three:hover,
+.heart--three:hover::before,
+.heart--three:hover::after {
+    display: inline-block;
+    animation: heart 1.5s ease-in-out 1;
+    animation-fill-mode: forwards;
+}
+/* heart menu four */
+.heart--four {
+    background-color: white;
+    height: 12px;
+    position: relative;
+    top: 48px;
+    right: 28px;
+    transform: rotate(-45deg);
+    position: absolute;
+    width: 12px;
+    cursor: pointer;
+}
+.heart--four:before,
+.heart--four:after {
+    content: "";
+    background-color: white;
+    border-radius: 50%;
+    height: 12px;
+    position: absolute;
+    width: 12px;
+}
+.heart--four:before {
+    top: -8px;
+    left: 0;
+}
+
+.heart--four:after {
+    left: 8px;
+    top: 0;
+}
+.heart--four:hover,
+.heart--four:hover::before,
+.heart--four:hover::after {
+    display: inline-block;
+    animation: heart 1.5s ease-in-out 1;
+    animation-fill-mode: forwards;
+}
