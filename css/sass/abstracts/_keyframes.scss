@@ -49,25 +49,25 @@
         background: white;
     }
     100% {
-        background: pink;
+        background: $third-color;
     }
 }
 @keyframes box {
-    0% {
-        transform: translateX(60px);
+    from {
+        transform: translateX(70px);
         
     }
-    100% {
+    to {
         transform: translateX(0);
     }
 }
 @keyframes boxReverse {
-    0% {
+    from {
         transform: translateX(0);
         
     }
-    100% {
-        transform: translateX(60px);
+    to {
+        transform: translateX(70px);
     }
 }
 @keyframes validate {

@@ -43,7 +43,6 @@
         background: #f9f9f9;
     }
 }
-
 #empty-heart {
     position: relative;
     margin: auto;
@@ -74,7 +73,6 @@
     cursor: pointer;
     .plat--titre {
         font-size: 1.1rem;
-
         margin-top: 8px;
     }
 }
@@ -109,6 +107,8 @@
     margin-top: -20px;
     margin-right: -1px;
     background: $third-color;
+    margin-bottom: -1px;
+    animation: boxReverse 600ms ease-in-out;
     display: none;
 }
 .box--plats:hover {
@@ -122,6 +122,7 @@
         }
     }
 }
+
 .box--plats:hover {
     .plat--soustitre--long {
         width: 260px;
@@ -130,6 +131,12 @@
         white-space: nowrap;
     }
 }
+.box--plats:hover {
+    .plat--prix {
+        animation: box 600ms ease-in-out;
+    }
+}
+
 .validation--logo {
     width: 28px;
     height: 28px;

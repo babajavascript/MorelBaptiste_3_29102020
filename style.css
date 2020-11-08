@@ -48,75 +48,23 @@
     background: white;
   }
   100% {
-    background: #ff79da;
-  }
-}
-@keyframes rotateit {
-  0% {
-    transform: rotate(360deg);
-  }
-  20% {
-    opacity: 1;
-  }
-  30% {
-    opacity: 1;
-  }
-  80% {
-    opacity: 1;
-  }
-  100% {
-    transform: rotate(0deg);
-    opacity: 0;
-  }
-}
-@keyframes body {
-  0% {
-    opacity: 0;
-  }
-  10% {
-    opacity: 0;
-  }
-  20% {
-    opacity: 0;
-  }
-  39% {
-    opacity: 0;
-  }
-  69% {
-    opacity: 0;
-  }
-  89% {
-    opacity: 0;
-  }
-  97% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes heart {
-  0% {
-    background: white;
-  }
-  100% {
-    background: pink;
+    background: #99e2d0;
   }
 }
 @keyframes box {
-  0% {
-    transform: translateX(60px);
+  from {
+    transform: translateX(70px);
   }
-  100% {
+  to {
     transform: translateX(0);
   }
 }
 @keyframes boxReverse {
-  0% {
+  from {
     transform: translateX(0);
   }
-  100% {
-    transform: translateX(60px);
+  to {
+    transform: translateX(70px);
   }
 }
 @keyframes validate {
@@ -234,7 +182,7 @@
 .heart--index:hover::before,
 .heart--index:hover::after {
   display: inline-block;
-  animation: heart 1.5s ease-in-out 1;
+  animation: heart 500ms ease-in-out 1;
   animation-fill-mode: forwards;
 }
 
@@ -275,7 +223,7 @@
 .heart:hover::before,
 .heart:hover::after {
   display: inline-block;
-  animation: heart 1.5s ease-in-out 1;
+  animation: heart 500ms ease-in-out 1;
   animation-fill-mode: forwards;
 }
 
@@ -316,7 +264,7 @@
 .heart--two:hover::before,
 .heart--two:hover::after {
   display: inline-block;
-  animation: heart 1.5s ease-in-out 1;
+  animation: heart 500ms ease-in-out 1;
   animation-fill-mode: forwards;
 }
 
@@ -357,7 +305,7 @@
 .heart--three:hover::before,
 .heart--three:hover::after {
   display: inline-block;
-  animation: heart 1.5s ease-in-out 1;
+  animation: heart 500ms ease-in-out 1;
   animation-fill-mode: forwards;
 }
 
@@ -398,7 +346,7 @@
 .heart--four:hover::before,
 .heart--four:hover::after {
   display: inline-block;
-  animation: heart 1.5s ease-in-out 1;
+  animation: heart 500ms ease-in-out 1;
   animation-fill-mode: forwards;
 }
 
@@ -761,6 +709,8 @@ header h1 a {
   margin-top: -20px;
   margin-right: -1px;
   background: #99e2d0;
+  margin-bottom: -1px;
+  animation: boxReverse 600ms ease-in-out;
   display: none;
 }
 
@@ -781,6 +731,10 @@ header h1 a {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+}
+
+.box--plats:hover .plat--prix {
+  animation: box 600ms ease-in-out;
 }
 
 .validation--logo {

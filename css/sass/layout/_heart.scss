@@ -32,7 +32,7 @@
 .heart--index:hover::before,
 .heart--index:hover::after {
     display: inline-block;
-    animation: heart 1.5s ease-in-out 1;
+    animation: heart 500ms ease-in-out 1;
     animation-fill-mode: forwards;
 }
 /* heart menu one */
@@ -69,7 +69,7 @@
 .heart:hover::before,
 .heart:hover::after {
     display: inline-block;
-    animation: heart 1.5s ease-in-out 1;
+    animation: heart 500ms ease-in-out 1;
     animation-fill-mode: forwards;
 }
 /* heart menu two */
@@ -106,7 +106,7 @@
 .heart--two:hover::before,
 .heart--two:hover::after {
     display: inline-block;
-    animation: heart 1.5s ease-in-out 1;
+    animation: heart 500ms ease-in-out 1;
     animation-fill-mode: forwards;
 }
 /* heart menu three */
@@ -143,7 +143,7 @@
 .heart--three:hover::before,
 .heart--three:hover::after {
     display: inline-block;
-    animation: heart 1.5s ease-in-out 1;
+    animation: heart 500ms ease-in-out 1;
     animation-fill-mode: forwards;
 }
 /* heart menu four */
@@ -180,6 +180,6 @@
 .heart--four:hover::before,
 .heart--four:hover::after {
     display: inline-block;
-    animation: heart 1.5s ease-in-out 1;
+    animation: heart 500ms ease-in-out 1;
     animation-fill-mode: forwards;
 }
