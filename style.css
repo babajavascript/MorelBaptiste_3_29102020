@@ -1,4 +1,20 @@
 @charset "UTF-8";
+.box--plats--one {
+  animation: boxplats 1.2s;
+}
+
+.box--plats--two {
+  animation: boxplats 1.4s;
+}
+
+.box--plats--three {
+  animation: boxplats 1.6s;
+}
+
+.box--plats--four {
+  animation: boxplats 1.7s;
+}
+
 @keyframes rotateit {
   0% {
     transform: rotate(360deg);
@@ -14,7 +30,6 @@
   }
   100% {
     transform: rotate(0deg);
-    opacity: 0;
   }
 }
 @keyframes body {
@@ -53,7 +68,7 @@
 }
 @keyframes box {
   from {
-    transform: translateX(70px);
+    transform: translateX(72px);
   }
   to {
     transform: translateX(0);
@@ -62,9 +77,11 @@
 @keyframes boxReverse {
   from {
     transform: translateX(0);
+    opacity: 1;
   }
   to {
-    transform: translateX(70px);
+    transform: translateX(72px);
+    opacity: 1;
   }
 }
 @keyframes validate {
@@ -73,6 +90,27 @@
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+@keyframes boxplats {
+  0% {
+    opacity: 0;
+    margin-top: 5px;
+  }
+  15% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
   }
 }
 .position--spinner {
@@ -710,8 +748,13 @@ header h1 a {
   margin-right: -1px;
   background: #99e2d0;
   margin-bottom: -1px;
-  animation: boxReverse 600ms ease-in-out;
-  display: none;
+  overflow: hidden;
+  animation: boxReverse 400ms linear forwards;
+  opacity: 1;
+}
+
+.figcaption--encoche--test {
+  opacity: 1;
 }
 
 .box--plats:hover {
@@ -720,10 +763,15 @@ header h1 a {
 }
 .box--plats:hover .figcaption--encoche {
   display: inline-block;
-  animation: box 600ms ease-in-out;
+  animation: box 400ms linear;
+  opacity: 1;
 }
 .box--plats:hover .figcaption--encoche .validation--logo i {
-  animation: validate 600ms ease-in-out;
+  animation: validate 400ms linear;
+}
+
+.box--plats:not(:hover) {
+  overflow: hidden;
 }
 
 .box--plats:hover .plat--soustitre--long {
@@ -734,7 +782,7 @@ header h1 a {
 }
 
 .box--plats:hover .plat--prix {
-  animation: box 600ms ease-in-out;
+  animation: box 400ms linear;
 }
 
 .validation--logo {
@@ -763,6 +811,7 @@ header h1 a {
 .plat--prix {
   margin-top: 14px;
   margin-right: 2px;
+  animation: boxReverse 400ms linear both;
 }
 
 .section--titleAndBtn--page {

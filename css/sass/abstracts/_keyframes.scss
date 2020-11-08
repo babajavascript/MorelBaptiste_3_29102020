@@ -15,7 +15,6 @@
     }
     100% {
         transform: rotate(0deg);
-        opacity: 0;
     }
 }
 @keyframes body {
@@ -54,8 +53,7 @@
 }
 @keyframes box {
     from {
-        transform: translateX(70px);
-        
+        transform: translateX(72px);
     }
     to {
         transform: translateX(0);
@@ -64,10 +62,11 @@
 @keyframes boxReverse {
     from {
         transform: translateX(0);
-        
+        opacity: 1;
     }
     to {
-        transform: translateX(70px);
+        transform: translateX(72px);
+        opacity: 1;
     }
 }
 @keyframes validate {
@@ -76,5 +75,28 @@
     }
     100% {
         transform: rotate(360deg);
+    }
+}
+@keyframes boxplats {
+    0% {
+        opacity: 0;
+        margin-top: 5px;
+    }
+    15% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0;
+    }
+    50% {
+        
+        opacity: 0;
+    }
+    75% {
+        opacity: 0.5;
+
+    }
+    100% {
+        opacity: 1;
     }
 }
