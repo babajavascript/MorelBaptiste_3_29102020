@@ -62,11 +62,9 @@
 @keyframes boxReverse {
     from {
         transform: translateX(0);
-        opacity: 1;
     }
     to {
         transform: translateX(72px);
-        opacity: 1;
     }
 }
 @keyframes validate {

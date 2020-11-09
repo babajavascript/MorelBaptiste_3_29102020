@@ -1,7 +1,7 @@
 @import "./css/sass/abstracts/variables";
 @import "./css/sass/abstracts/functions";
-@import "./css/sass/abstracts/keyframes";
-@import "./css/sass/layout/spinner";
+
+//@import "./css/sass/layout/spinner";
 @import "./css/sass/abstracts/mixins";
 @import "./css/sass/layout/heart";
 @import "./css/sass/base/reset";
@@ -10,5 +10,7 @@
 @import "./css/sass/components/buttons";
 @import "./css/sass/layout/sectionfonctionnement";
 @import "./css/sass/layout/thirdsection";
-@import "./css/sass/pages/menuone";
+@import "./css/sass/layout/menu";
 @import "./css/sass/layout/footer";
+@import "./css/sass/abstracts/keyframes";
+@import "./css/sass/themes/media";

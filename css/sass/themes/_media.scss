@@ -1,0 +1,77 @@
+@media screen and (min-width: 200px) and (max-width: 374px) {
+    header{
+        margin-left: 30px;
+    }
+    .section--titleAndBtn--page{
+        width: 375px;
+    }
+    .section--titleAndBtn {
+        .section--second--title {
+            width: 260px;
+        }
+    }
+        .container--box {
+            width: 210px;
+        }
+    #containerSecondSection
+    .second--container--tiitle {
+        text-align: center;
+    }
+    .third--container--tiitle{
+        text-align: center;
+    }
+    #figure--position .link--menu .figure--menu {
+        width: 270px;
+
+    }
+    #figure--position .link--menu .figure--menu img{
+        width: 270px;
+    }
+    footer{
+        min-width: 0px;
+    }
+    footer{
+        width: 375px;
+    }
+}
+@media screen and (min-width: 700px) and (max-width: 900px) {
+    #containerSecondSection
+    .second--container--tiitle {
+        text-align: center;
+    }
+    .third--container--tiitle{
+        text-align: center;
+    }
+    #figure--position{
+        justify-content: space-between;
+    }
+}
+@media screen and (min-width: 900px) {
+    #containerSecondSection
+    .second--container--tiitle {
+        text-align: center;
+    }
+    .third--container--tiitle{
+        text-align: center;
+    }
+    #figure--position{
+        justify-content: space-around;
+    }
+}
+@media screen and (min-width: 375px) {
+    .container--menu{
+        background: white;
+    }
+    .container--menu img{
+        border-radius: 60%;height: 350px;
+    }
+    .menu--title{
+        border-radius: 0;
+        margin-top: 0px;
+        position: relative;
+        background: white;
+    }
+    .section--titleAndBtn--page{
+        background: white;
+    }
+}

@@ -108,12 +108,7 @@
     margin-right: -1px;
     background: $third-color;
     margin-bottom: -1px;
-    overflow: hidden;
-    animation: boxReverse 400ms linear forwards;
-    opacity: 1;
-}
-.figcaption--encoche--test{
-    opacity: 1;
+    animation: boxReverse 400ms linear both;
 }
 .box--plats:hover {
     display: block;
@@ -121,7 +116,6 @@
     .figcaption--encoche {
         display: inline-block;
         animation: box 400ms linear;
-        opacity: 1;
         .validation--logo i {
             animation: validate 400ms linear;
         }
@@ -170,36 +164,4 @@
     margin-right: 2px;
     animation: boxReverse 400ms linear both;
 }
-//here we talk about the linear gradient btn
 
-.section--titleAndBtn--page {
-    display: flex;
-    background: #f9f9f9;
-}
-.section--btn--page {
-    cursor: pointer;
-    margin: auto;
-    margin-top: 40px;
-    margin-bottom: 60px;
-    box-shadow: 0px 5px 5px lightgrey;
-    padding: 15px;
-    padding-left: 40px;
-    padding-right: 40px;
-    border-radius: 30px;
-    font-size: 1rem;
-    background: linear-gradient(
-        173deg,
-        rgba(255, 121, 218, 1) 0%,
-        rgba(214, 108, 219, 1) 39%,
-        rgba(171, 94, 220, 1) 85%,
-        rgba(155, 89, 220, 1) 100%
-    );
-    transition: box-shadow 200ms ease-in-out;
-    & a {
-        color: white;
-    }
-    &:hover {
-        opacity: 0.9;
-        box-shadow: 0px 10px 5px lightgrey;
-    }
-}
