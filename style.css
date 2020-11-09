@@ -1,20 +1,4 @@
 @charset "UTF-8";
-.box--plats--one {
-  animation: boxplats 1.2s;
-}
-
-.box--plats--two {
-  animation: boxplats 1.4s;
-}
-
-.box--plats--three {
-  animation: boxplats 1.6s;
-}
-
-.box--plats--four {
-  animation: boxplats 1.7s;
-}
-
 .position--spinner {
   margin: auto;
   position: relative;
@@ -83,6 +67,22 @@
 
 .transform {
   animation: body 3.5s;
+}
+
+.box--plats--one {
+  animation: boxplats 1.2s;
+}
+
+.box--plats--two {
+  animation: boxplats 1.4s;
+}
+
+.box--plats--three {
+  animation: boxplats 1.6s;
+}
+
+.box--plats--four {
+  animation: boxplats 1.7s;
 }
 
 /* heart index */
