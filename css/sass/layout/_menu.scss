@@ -1,6 +1,5 @@
 .arrow--title {
     display: inline;
-    justify-content: none;
     .fa-arrow-left {
         font-size: 1.7rem;
         position: absolute;
@@ -121,7 +120,7 @@
         }
     }
 }
-.box--plats:not(:hover){
+.box--plats:not(:hover) {
     overflow: hidden;
 }
 
@@ -164,4 +163,3 @@
     margin-right: 2px;
     animation: boxReverse 400ms linear both;
 }
-

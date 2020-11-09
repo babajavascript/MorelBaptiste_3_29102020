@@ -498,7 +498,6 @@ header h1 a {
 
 .arrow--title {
   display: inline;
-  justify-content: none;
 }
 .arrow--title .fa-arrow-left {
   font-size: 1.7rem;
@@ -670,7 +669,6 @@ header h1 a {
 footer {
   background: #363636;
   color: white;
-  border: border-box;
   padding: 15px 0px 15px 0px;
   min-width: 375px;
 }
@@ -827,7 +825,7 @@ footer {
   }
 
   footer {
-    min-width: auto;
+    min-width: 0;
   }
 }
 @media screen and (min-width: 700px) and (max-width: 900px) {
