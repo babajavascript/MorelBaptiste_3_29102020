@@ -827,11 +827,7 @@ footer {
   }
 
   footer {
-    min-width: 0px;
-  }
-
-  footer {
-    width: 375px;
+    min-width: auto;
   }
 }
 @media screen and (min-width: 700px) and (max-width: 900px) {
@@ -860,7 +856,7 @@ footer {
     justify-content: space-around;
   }
 }
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 376px) {
   .container--menu {
     background: white;
   }
