@@ -1,74 +1,4 @@
 @charset "UTF-8";
-.position--spinner {
-  margin: auto;
-  position: relative;
-  display: flex;
-  justify-content: center;
-}
-
-.spinner {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  margin: auto;
-  margin-top: 200px;
-  animation: rotateit 1.5s ease-in-out 2;
-  opacity: 0;
-}
-.spinner div {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: linear-gradient(173deg, #ff79da 0%, #d66cdb 39%, #ab5edc 85%, #9b59dc 100%);
-  position: absolute;
-  margin: auto;
-  top: 45px;
-  left: 35px;
-}
-
-.spinner.circles div:nth-child(1) {
-  transform: rotate(0deg) translate(0, -35px) scale(1.3);
-}
-
-.spinner.circles div:nth-child(2) {
-  transform: rotate(45deg) translate(0, -35px) scale(1.2);
-  opacity: 0.7;
-}
-
-.spinner.circles div:nth-child(3) {
-  transform: rotate(90deg) translate(0, -35px) scale(1.1);
-  opacity: 0.6;
-}
-
-.spinner.circles div:nth-child(4) {
-  transform: rotate(135deg) translate(0, -35px) scale(0.9);
-  opacity: 0.5;
-}
-
-.spinner.circles div:nth-child(5) {
-  transform: rotate(180deg) translate(0, -35px) scale(0.7);
-  opacity: 0.4;
-}
-
-.spinner.circles div:nth-child(6) {
-  transform: rotate(225deg) translate(0, -35px) scale(0.5);
-  opacity: 0.3;
-}
-
-.spinner.circles div:nth-child(7) {
-  transform: rotate(270deg) translate(0, -35px) scale(0.3);
-  opacity: 0.2;
-}
-
-.spinner.circles div:nth-child(8) {
-  transform: rotate(315deg) translate(0, -35px) scale(0.1);
-  opacity: 0.1;
-}
-
-.transform {
-  animation: body 3.5s;
-}
-
 .box--plats--one {
   animation: boxplats 1.2s;
 }
@@ -118,12 +48,20 @@
   top: 0;
 }
 
-.heart--index:hover,
-.heart--index:hover::before,
-.heart--index:hover::after {
+.heart--index:hover {
   display: inline-block;
-  animation: heart 500ms ease-in-out 1;
-  animation-fill-mode: forwards;
+  animation: heart 500ms linear forwards;
+  background: linear-gradient(173deg, #ff79da 0%, #d66cdb 39%, #ab5edc 85%, #9b59dc 100%);
+}
+
+.heart--index:hover::after {
+  animation: heart 300ms linear forwards;
+  background: linear-gradient(173deg, #ff79da 0%, #d66cdb 39%, #ab5edc 85%, #9b59dc 100%);
+}
+
+.heart--index:hover::before {
+  animation: heart 100ms linear forwards;
+  background: #d66cdb 39%;
 }
 
 /* heart menu one */
@@ -159,12 +97,20 @@
   top: 0;
 }
 
-.heart:hover,
-.heart:hover::before,
-.heart:hover::after {
+.heart:hover {
   display: inline-block;
-  animation: heart 500ms ease-in-out 1;
-  animation-fill-mode: forwards;
+  animation: heart 500ms linear forwards;
+  background: linear-gradient(173deg, #ff79da 0%, #d66cdb 39%, #ab5edc 85%, #9b59dc 100%);
+}
+
+.heart:hover::after {
+  animation: heart 300ms linear forwards;
+  background: linear-gradient(173deg, #ff79da 0%, #d66cdb 39%, #ab5edc 85%, #9b59dc 100%);
+}
+
+.heart:hover::before {
+  animation: heart 100ms linear forwards;
+  background: #d66cdb 39%;
 }
 
 /* heart menu two */
@@ -200,12 +146,20 @@
   top: 0;
 }
 
-.heart--two:hover,
-.heart--two:hover::before,
-.heart--two:hover::after {
+.heart--two:hover {
   display: inline-block;
-  animation: heart 500ms ease-in-out 1;
-  animation-fill-mode: forwards;
+  animation: heart 500ms linear forwards;
+  background: linear-gradient(173deg, #ff79da 0%, #d66cdb 39%, #ab5edc 85%, #9b59dc 100%);
+}
+
+.heart--two:hover::after {
+  animation: heart 300ms linear forwards;
+  background: linear-gradient(173deg, #ff79da 0%, #d66cdb 39%, #ab5edc 85%, #9b59dc 100%);
+}
+
+.heart--two:hover::before {
+  animation: heart 100ms linear forwards;
+  background: #d66cdb 39%;
 }
 
 /* heart menu three */
@@ -214,7 +168,7 @@
   height: 12px;
   position: relative;
   top: 48px;
-  right: 40px;
+  right: 41px;
   transform: rotate(-45deg);
   position: absolute;
   width: 12px;
@@ -241,12 +195,20 @@
   top: 0;
 }
 
-.heart--three:hover,
-.heart--three:hover::before,
-.heart--three:hover::after {
+.heart--three:hover {
   display: inline-block;
-  animation: heart 500ms ease-in-out 1;
-  animation-fill-mode: forwards;
+  animation: heart 500ms linear forwards;
+  background: linear-gradient(173deg, #ff79da 0%, #d66cdb 39%, #ab5edc 85%, #9b59dc 100%);
+}
+
+.heart--three:hover::after {
+  animation: heart 300ms linear forwards;
+  background: linear-gradient(173deg, #ff79da 0%, #d66cdb 39%, #ab5edc 85%, #9b59dc 100%);
+}
+
+.heart--three:hover::before {
+  animation: heart 100ms linear forwards;
+  background: #d66cdb 39%;
 }
 
 /* heart menu four */
@@ -282,12 +244,20 @@
   top: 0;
 }
 
-.heart--four:hover,
-.heart--four:hover::before,
-.heart--four:hover::after {
+.heart--four:hover {
   display: inline-block;
-  animation: heart 500ms ease-in-out 1;
-  animation-fill-mode: forwards;
+  animation: heart 500ms linear forwards;
+  background: linear-gradient(173deg, #ff79da 0%, #d66cdb 39%, #ab5edc 85%, #9b59dc 100%);
+}
+
+.heart--four:hover::after {
+  animation: heart 300ms linear forwards;
+  background: linear-gradient(173deg, #ff79da 0%, #d66cdb 39%, #ab5edc 85%, #9b59dc 100%);
+}
+
+.heart--four:hover::before {
+  animation: heart 100ms linear forwards;
+  background: #d66cdb 39%;
 }
 
 body {
@@ -811,9 +781,13 @@ footer {
 @keyframes heart {
   0% {
     background: white;
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.5;
   }
   100% {
-    background: #99e2d0;
+    opacity: 1;
   }
 }
 @keyframes box {

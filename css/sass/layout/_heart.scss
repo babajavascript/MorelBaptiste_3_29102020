@@ -22,18 +22,38 @@
 .heart--index:before {
     top: -8px;
     left: 0;
+    
 }
 
 .heart--index:after {
     left: 8px;
     top: 0;
 }
-.heart--index:hover,
-.heart--index:hover::before,
-.heart--index:hover::after {
+.heart--index:hover {
     display: inline-block;
-    animation: heart 500ms ease-in-out 1;
-    animation-fill-mode: forwards;
+    animation: heart 500ms linear forwards;
+    background: linear-gradient(
+        173deg,
+        rgba(255, 121, 218, 1) 0%,
+        rgba(214, 108, 219, 1) 39%,
+        rgba(171, 94, 220, 1) 85%,
+        rgba(155, 89, 220, 1) 100%
+    );
+    
+}
+.heart--index:hover::after {
+    animation: heart 300ms linear forwards;
+    background: linear-gradient(
+        173deg,
+        rgba(255, 121, 218, 1) 0%,
+        rgba(214, 108, 219, 1) 39%,
+        rgba(171, 94, 220, 1) 85%,
+        rgba(155, 89, 220, 1) 100%
+    );
+}
+.heart--index:hover::before {
+    animation: heart 100ms linear forwards;
+    background:         rgba(214, 108, 219, 1) 39%;
 }
 /* heart menu one */
 .heart {
@@ -65,12 +85,31 @@
     left: 8px;
     top: 0;
 }
-.heart:hover,
-.heart:hover::before,
-.heart:hover::after {
+.heart:hover {
     display: inline-block;
-    animation: heart 500ms ease-in-out 1;
-    animation-fill-mode: forwards;
+    animation: heart 500ms linear forwards;
+    background: linear-gradient(
+        173deg,
+        rgba(255, 121, 218, 1) 0%,
+        rgba(214, 108, 219, 1) 39%,
+        rgba(171, 94, 220, 1) 85%,
+        rgba(155, 89, 220, 1) 100%
+    );
+    
+}
+.heart:hover::after {
+    animation: heart 300ms linear forwards;
+    background: linear-gradient(
+        173deg,
+        rgba(255, 121, 218, 1) 0%,
+        rgba(214, 108, 219, 1) 39%,
+        rgba(171, 94, 220, 1) 85%,
+        rgba(155, 89, 220, 1) 100%
+    );
+}
+.heart:hover::before {
+    animation: heart 100ms linear forwards;
+    background:         rgba(214, 108, 219, 1) 39%;
 }
 /* heart menu two */
 .heart--two {
@@ -102,20 +141,40 @@
     left: 8px;
     top: 0;
 }
-.heart--two:hover,
-.heart--two:hover::before,
-.heart--two:hover::after {
+.heart--two:hover {
     display: inline-block;
-    animation: heart 500ms ease-in-out 1;
-    animation-fill-mode: forwards;
+    animation: heart 500ms linear forwards;
+    background: linear-gradient(
+        173deg,
+        rgba(255, 121, 218, 1) 0%,
+        rgba(214, 108, 219, 1) 39%,
+        rgba(171, 94, 220, 1) 85%,
+        rgba(155, 89, 220, 1) 100%
+    );
+    
 }
+.heart--two:hover::after {
+    animation: heart 300ms linear forwards;
+    background: linear-gradient(
+        173deg,
+        rgba(255, 121, 218, 1) 0%,
+        rgba(214, 108, 219, 1) 39%,
+        rgba(171, 94, 220, 1) 85%,
+        rgba(155, 89, 220, 1) 100%
+    );
+}
+.heart--two:hover::before {
+    animation: heart 100ms linear forwards;
+    background:         rgba(214, 108, 219, 1) 39%;
+}
+
 /* heart menu three */
 .heart--three {
     background-color: white;
     height: 12px;
     position: relative;
     top: 48px;
-    right: 40px;
+    right: 41px;
     transform: rotate(-45deg);
     position: absolute;
     width: 12px;
@@ -139,13 +198,33 @@
     left: 8px;
     top: 0;
 }
-.heart--three:hover,
-.heart--three:hover::before,
-.heart--three:hover::after {
+.heart--three:hover {
     display: inline-block;
-    animation: heart 500ms ease-in-out 1;
-    animation-fill-mode: forwards;
+    animation: heart 500ms linear forwards;
+    background: linear-gradient(
+        173deg,
+        rgba(255, 121, 218, 1) 0%,
+        rgba(214, 108, 219, 1) 39%,
+        rgba(171, 94, 220, 1) 85%,
+        rgba(155, 89, 220, 1) 100%
+    );
+    
 }
+.heart--three:hover::after {
+    animation: heart 300ms linear forwards;
+    background: linear-gradient(
+        173deg,
+        rgba(255, 121, 218, 1) 0%,
+        rgba(214, 108, 219, 1) 39%,
+        rgba(171, 94, 220, 1) 85%,
+        rgba(155, 89, 220, 1) 100%
+    );
+}
+.heart--three:hover::before {
+    animation: heart 100ms linear forwards;
+    background:         rgba(214, 108, 219, 1) 39%;
+}
+
 /* heart menu four */
 .heart--four {
     background-color: white;
@@ -176,10 +255,30 @@
     left: 8px;
     top: 0;
 }
-.heart--four:hover,
-.heart--four:hover::before,
-.heart--four:hover::after {
+.heart--four:hover {
     display: inline-block;
-    animation: heart 500ms ease-in-out 1;
-    animation-fill-mode: forwards;
+    animation: heart 500ms linear forwards;
+    background: linear-gradient(
+        173deg,
+        rgba(255, 121, 218, 1) 0%,
+        rgba(214, 108, 219, 1) 39%,
+        rgba(171, 94, 220, 1) 85%,
+        rgba(155, 89, 220, 1) 100%
+    );
+    
 }
+.heart--four:hover::after {
+    animation: heart 300ms linear forwards;
+    background: linear-gradient(
+        173deg,
+        rgba(255, 121, 218, 1) 0%,
+        rgba(214, 108, 219, 1) 39%,
+        rgba(171, 94, 220, 1) 85%,
+        rgba(155, 89, 220, 1) 100%
+    );
+}
+.heart--four:hover::before {
+    animation: heart 100ms linear forwards;
+    background:         rgba(214, 108, 219, 1) 39%;
+}
+

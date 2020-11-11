@@ -46,9 +46,13 @@
 @keyframes heart {
     0% {
         background: white;
+        opacity: 0;
+    }
+    30%{
+        opacity: 0.5;
     }
     100% {
-        background: $third-color;
+        opacity: 01
     }
 }
 @keyframes box {
