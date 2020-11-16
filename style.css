@@ -967,6 +967,16 @@ footer {
   #figure--position {
     justify-content: space-around;
   }
+
+  body {
+    background: #ffabe8;
+    background: linear-gradient(90deg, #ffabe8 0%, white 20%, white 52%, white 83%, #d5a5f4 99%);
+  }
+
+  body .section--titleAndBtn--page {
+    background: #ffabe8;
+    background: linear-gradient(90deg, #ffabe8 0%, white 20%, white 52%, white 83%, #d5a5f4 99%);
+  }
 }
 @media screen and (min-width: 376px) {
   .container--menu {

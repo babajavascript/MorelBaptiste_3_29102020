@@ -54,6 +54,14 @@
     #figure--position{
         justify-content: space-around;
     }
+    body{
+        background: rgb(255,171,232);
+background: linear-gradient(90deg, rgba(255,171,232,1) 0%, rgba(255,255,255,1) 20%, rgba(255,255,255,1) 52%, rgba(255,255,255,1) 83%, rgba(213,165,244,1) 99%);
+    }
+ body .section--titleAndBtn--page{
+        background: rgb(255,171,232);
+background: linear-gradient(90deg, rgba(255,171,232,1) 0%, rgba(255,255,255,1) 20%, rgba(255,255,255,1) 52%, rgba(255,255,255,1) 83%, rgba(213,165,244,1) 99%);
+    }
 }
 @media screen and (min-width: 376px) {
     .container--menu{
